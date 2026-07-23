@@ -1,0 +1,12 @@
+node_modules/
+**/node_modules/
+dist/
+**/dist/
+dist-ts/
+**/dist-ts/
+.codedoctor/
+**/.codedoctor/
+work/
+outputs/
+examples/
+docs/superpowers/
