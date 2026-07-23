@@ -1,0 +1,31 @@
+{
+  "name": "codedoctor",
+  "version": "0.1.0",
+  "description": "Local-first code diagnostics workbench for unfamiliar projects",
+  "private": true,
+  "license": "MIT",
+  "type": "module",
+  "packageManager": "pnpm@9.15.4",
+  "engines": {
+    "node": ">=22",
+    "pnpm": ">=9"
+  },
+  "scripts": {
+    "build": "pnpm --filter @codedoctor/shared build && pnpm -r --workspace-concurrency=1 --if-present build",
+    "check": "pnpm test && pnpm build",
+    "dev": "pnpm dev:web",
+    "test": "vitest run",
+    "scan": "pnpm --filter @codedoctor/cli dev scan",
+    "dev:cli": "pnpm --filter @codedoctor/cli dev",
+    "dev:web": "pnpm --filter @codedoctor/web dev",
+    "preview:web": "pnpm --filter @codedoctor/web preview"
+  },
+  "devDependencies": {
+    "@types/node": "^22.10.2",
+    "@vitejs/plugin-react": "^4.3.4",
+    "typescript": "^5.7.2",
+    "vite": "^6.0.3",
+    "vitest": "^2.1.8",
+    "tsx": "^4.19.2"
+  }
+}
