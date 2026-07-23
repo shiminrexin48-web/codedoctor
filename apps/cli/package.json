@@ -1,0 +1,22 @@
+{
+  "name": "@codedoctor/cli",
+  "version": "0.1.0",
+  "type": "module",
+  "bin": {
+    "codedoctor": "dist/index.js"
+  },
+  "scripts": {
+    "dev": "tsx src/index.ts",
+    "build": "tsc -p tsconfig.json"
+  },
+  "dependencies": {
+    "@codedoctor/core": "workspace:*",
+    "@codedoctor/ai": "workspace:*",
+    "@codedoctor/report": "workspace:*",
+    "@codedoctor/scoring": "workspace:*",
+    "@codedoctor/shared": "workspace:*"
+  },
+  "devDependencies": {
+    "tsx": "^4.19.2"
+  }
+}
