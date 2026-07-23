@@ -1,0 +1,13 @@
+{
+  "name": "sample-ai-coded-app",
+  "version": "0.1.0",
+  "type": "module",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "vite"
+  },
+  "dependencies": {
+    "react": "^19.0.0",
+    "vite": "^6.0.0"
+  }
+}
